@@ -4,7 +4,7 @@ import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }#dict for the datasets
+              'washington': 'washington.csv' }
 
 
 def get_filters():
@@ -26,11 +26,11 @@ def get_filters():
             break
         else:
             print("\nPlease Enter one of these cities (chicago,new york city,washington)\n")
-            continue
+
 
     # TO DO: get user input for month (all, january, february, ... , june)
 
-    months = ['june', 'may', 'march', 'february', 'april', 'january','all']
+    months = ['january', 'february' , 'march', 'april', 'may','june','all']
 
     while True:
         month = input("Please Enter the month you want(Enter all if you want all months): ").lower()
