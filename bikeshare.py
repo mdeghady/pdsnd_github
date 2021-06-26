@@ -96,7 +96,7 @@ def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
+    start_proccesing_time = time.time()
 
     # TO DO: display the most common month
 
@@ -120,7 +120,7 @@ def time_stats(df):
 
     print(f"most common hour : {most_common_hour}\t counts: {num_of_apperence_of_hour}")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_proccesing_time))
     print('-' * 40)
 
 
