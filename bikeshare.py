@@ -185,7 +185,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
+    start_proccesing_time = time.time()
 
     # TO DO: Display counts of user types
 
@@ -214,7 +214,7 @@ def user_stats(df):
     except KeyError:
         pass
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_proccesing_time))
     print('-' * 40)
 
 def display_data(df):
