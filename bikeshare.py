@@ -27,11 +27,11 @@ def get_filters():
             break
         else:
             print("\nPlease Enter one of these cities (chicago,new york city,washington)\n")
-            continue
+
 
     # TO DO: get user input for month (all, january, february, ... , june)
 
-    months = ['june', 'may', 'march', 'february', 'april', 'january','all']
+    months = ['january', 'february' , 'march', 'april', 'may','june','all']
 
     while True:
         month = input("Please Enter the month you want(Enter all if you want all months): ").lower()
@@ -40,7 +40,7 @@ def get_filters():
             break
         else:
             print("\nmonths of the year are ( january , february ,march ,april,may ,june)  \n please enter one of them or enter all if you want them all\n")
-            continue
+
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
@@ -55,7 +55,7 @@ def get_filters():
         else:
             print("\ndays of the week are  (sunday,monday,tuesday,wednesday,thursday,friday,saturday)\n please enter one of them or enter all if you want them all\n")
 
-            continue
+
 
     print('-' * 40)
     return city, month, day
@@ -97,7 +97,7 @@ def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
-    start_time = time.time()
+    start_proccesing_time = time.time()
 
     # TO DO: display the most common month
 
@@ -121,7 +121,7 @@ def time_stats(df):
 
     print(f"most common hour : {most_common_hour}\t counts: {num_of_apperence_of_hour}")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_proccesing_time))
     print('-' * 40)
 
 
@@ -129,7 +129,7 @@ def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
+    start_proccesing_time = time.time()
 
     # TO DO: display most commonly used start station
 
@@ -153,7 +153,7 @@ def station_stats(df):
 
     print(f"most commonly combination of start end stations : {most_frequent_combination_of_stations}\tcounts : {num_of_combinations}")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_proccesing_time))
     print('-' * 40)
 
 
@@ -161,7 +161,7 @@ def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
-    start_time = time.time()
+    start_proccesing_time = time.time()
 
     # TO DO: display total travel time
 
@@ -178,7 +178,7 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print("mean travel time is {:.2f} seconds".format(mean_travel_time))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_proccesing_time))
     print('-' * 40)
 
 
@@ -186,7 +186,7 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
+    start_proccesing_time = time.time()
 
     # TO DO: Display counts of user types
 
@@ -215,7 +215,7 @@ def user_stats(df):
     except KeyError:
         pass
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_proccesing_time))
     print('-' * 40)
 
 def display_data(df):
