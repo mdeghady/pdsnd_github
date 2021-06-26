@@ -39,7 +39,7 @@ def get_filters():
             break
         else:
             print("\nmonths of the year are ( january , february ,march ,april,may ,june)  \n please enter one of them or enter all if you want them all\n")
-            continue
+            
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
